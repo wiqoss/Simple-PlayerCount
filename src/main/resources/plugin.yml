@@ -1,0 +1,18 @@
+name: UniquesPlayer
+version: 1.0.0
+main: com.uniquesplayer.UniquesPlayer
+api-version: 1.20
+description: Track unique players with web interface and API
+author: Server Admin
+
+commands:
+  uniquesplayer:
+    description: Show all unique players who have joined
+    usage: /uniquesplayer
+    permission: uniquesplayer.view
+    aliases: [up, uniqueplayers]
+
+permissions:
+  uniquesplayer.view:
+    description: Allows viewing unique player list
+    default: op

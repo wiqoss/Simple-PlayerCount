@@ -1,0 +1,8 @@
+# UniquesPlayer Configuration
+
+# Web Server Settings
+web-server:
+  # Port for the web server (default: 19069)
+  # Access the web page at: http://your-server-ip:19069
+  # Access the API at: http://your-server-ip:19069/api
+  port: 19069
