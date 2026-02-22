@@ -77,7 +77,6 @@ public class UniquesPlayer extends JavaPlugin implements Listener {
         return uniquePlayers.size();
     }
 
-    // Not used, maybe it's better to delete it?
     public Set<UUID> getUniquePlayers() {
         return Collections.unmodifiableSet(uniquePlayers);
     }
