@@ -34,7 +34,7 @@ public class UniquesPlayer extends JavaPlugin implements Listener {
         loadData();
         
         getServer().getPluginManager().registerEvents(this, this);
-        getCommand("uniquesplayer").setExecutor(new UniquesPlayerCommand(this));
+        getCommand("uniquesplayer").setExecutor(new UniquesPlayerCommand());
         
         int port = getConfig().getInt("web-server.port", 19069);
         webServer = new WebServer(this, port);
@@ -76,7 +76,8 @@ public class UniquesPlayer extends JavaPlugin implements Listener {
     public int getUniquePlayerCount() {
         return uniquePlayers.size();
     }
-    
+
+    // Not used, maybe it's better to delete it?
     public Set<UUID> getUniquePlayers() {
         return Collections.unmodifiableSet(uniquePlayers);
     }
